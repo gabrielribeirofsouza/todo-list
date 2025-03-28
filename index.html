@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/8af519cf1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="top-content">
+            <section id="header-area">
+                <h1>T O D O</h1>
+                <button class="theme" id="dark-mode"><i class="fa-solid fa-sun" style="color: #ffffff;"></i></button>
+                <button class="theme" id="ligth-mode"><i class="fa-solid fa-moon" style="color: #ffffff;"></i></button>
+            </section>
+            <div id="input-area">
+                <input id="inputTask" type="text" placeholder="Digite a sua tarefa">
+                <button id="addtask">+</button>
+            </div>
+        </div>
+        <div id="bottom-content">
+            <ul id="tasks">
+                
+               
+            </ul>
+            <div id="task-info">
+                <span id="list-size">N</span>
+                <ul id="list-filter">
+                    <li><button id="allTasks"><p>Todos</p></button></li>
+                    <li><button id="tasksLoading"><p>A fazer</p></button></li>
+                    <li>
+                        <button id="tasksOk"><p>Concluidas</p></button></li>
+                    <li>
+                        <span id="clear-list">
+                            <img src="imagens/excluir.png" alt="">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">Desenvolvido por Gabriel R</footer>
+    <script src="todo.js"></script>
+</body>
+</html>

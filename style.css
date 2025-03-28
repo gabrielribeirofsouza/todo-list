@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #121826c9;
+}
+#container{
+   width: 100vw;
+    height: auto;
+   
+}
+
+
+
+#top-content{
+    background-image: url(imagens/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+#top-content > #header-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 400px;
+}
+#top-content > #header-area > h1 {
+    font-size: 30px;
+    color: white;
+    font-family: 'Exo 2';
+    font-weight: 300;
+}
+#top-content > #header-area > .theme{
+    background: none;
+    border: none;
+}
+#top-content > #header-area > .theme > i{
+    font-size: 20px;
+}
+#top-content > #header-area > .theme > i:hover{
+    cursor: pointer;
+}
+
+#input-area{
+    max-width: 520px;
+    margin: 0 auto;
+    position: relative;
+
+}
+#input-area > input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+   
+    
+}
+#input-area > button{
+   position: absolute;
+   right: 10px;
+   top: 7px;
+   font-size: 30px;
+   font-weight: bold;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+
+
+#bottom-content{
+    width: 520px;
+    margin: 0 auto;
+    background-color: hsl(235, 24%, 19%);
+    position: relative;
+    bottom: 20px;
+    padding: 10px;
+}
+#tasks > li{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.61);
+    margin-bottom: 3px;
+    color: lightgray;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#tasks > li{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#tasks > li > .icons-task{
+    display: flex;
+    gap: 10px;
+}
+#tasks > li > .icons-task > i, span{
+    cursor: pointer;
+}
+#task-info{
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
+}
+#list-filter{
+    display: flex;
+    gap: 70px;
+}
+#list-filter > li > button{
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#list-filter > li > button:hover{
+    color: blue;
+    transition: 0.2s;
+}
+#clear-list > img{
+    cursor: pointer;
+}
+#list-size{
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    text-align: center;
+    color: beige;
+}
+
+
+.ligthTheme{
+    color: black;   
+}
+.hide{
+    display: none;
+}
+.finish{
+    text-decoration: line-through;
+    
+}
+
+.inputEdit{
+ display: flex;
+ align-items: center;
+ margin-bottom: 2px;
+ color: black;
+}
+
