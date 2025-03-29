@@ -24,11 +24,9 @@ let list = [];
 btnLigthMode.classList.add('hide')
 
 btnDarkMode.addEventListener('click', ()=>{
-
     btnLigthMode.classList.remove('hide')
     btnDarkMode.classList.add('hide')
-    document.body.classList.add('ligthTheme')
-
+    
     document.body.style.backgroundColor = '#D3D3D3'
     containerBottom.style.backgroundColor = 'white'
     size.style.color = 'black'
@@ -46,11 +44,9 @@ btnDarkMode.addEventListener('click', ()=>{
 })
 
 btnLigthMode.addEventListener('click', ()=> {
-
     btnDarkMode.classList.remove('hide')
     btnLigthMode.classList.add('hide')
-    document.body.classList.remove('ligthTheme')
-
+    
     document.body.style.backgroundColor = '#121826c9'
     containerBottom.style.backgroundColor = '#23253D'
     size.style.color = 'white'
@@ -91,24 +87,7 @@ function addTask(containerTask, task){
     let elSpan = document.createElement('span')
     contentTask.innerText = task.texto
     task.element = elLista
-    
-    if(document.body.classList.contains('ligthTheme')){
-        elLista.style.color = 'black'
-        contentTask.style.color = 'black'
-        elIconCircle.style.color = 'black'
-        elIconEdit.style.color = 'black'
-        elSpan.style.color = 'black'
-    }else{
-        elLista.style.color = 'white'
-        contentTask.style.color = 'white'
-        elIconCircle.style.color = 'white'
-        elIconEdit.style.color = 'white'
-        elSpan.style.color = 'white'
-    }
-
     containerTask.appendChild(elLista)
-
-    
 
     elLista.appendChild(contentTask)
     elLista.appendChild(divIconList)
