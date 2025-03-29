@@ -5,6 +5,28 @@
     text-decoration: none;
     list-style: none;
 }
+
+@media (max-width: 768px) {
+   #container{
+    width: 100%;
+   }
+   #container > #top-content > #header-area{
+    width: 100%;
+    gap: 300px;
+   }
+   #container > #top-content > #header-area > h1{
+    font-size: 30px;
+   }
+   #container > #top-content > #input-area{
+    width: calc(100% - 20%);
+   }
+   #task-info > #list-size{
+    margin-left: 15px;
+   }
+  }
+
+
+
 body{
     background-color: #121826c9;
 }
@@ -157,22 +179,4 @@ footer{
  color: black;
 }
 
-@media (max-width: 768px) {
-   #container{
-    width: 100%;
-   }
-   #container > #top-content > #header-area{
-    width: 100%;
-    gap: 300px;
-   }
-   #container > #top-content > #header-area > h1{
-    font-size: 30px;
-   }
-   #container > #top-content > #input-area{
-    width: calc(100% - 20%);
-   }
-   #task-info > #list-size{
-    margin-left: 15px;
-   }
-  }
  
