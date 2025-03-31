@@ -27,6 +27,9 @@
     #input-area{
         align-items: center
     }
+    #add-task{
+        margin-bottom: 5px
+    }
 }
 
 @media (max-width: 428px) {
@@ -42,7 +45,9 @@
     }
     #container > #top-content > #input-area{
         width: calc(100% - 20%);
-        align-items: center
+    }
+    #add-task{
+        margin-bottom: 5px
     }
     #task-info > #list-size{
         margin-left: 15px;
@@ -50,6 +55,9 @@
     
 }
 @media (max-width: 768px) {
+    #add-task{
+        margin-bottom: 5px
+    }
     #input-area{
         align-items: center
     }
