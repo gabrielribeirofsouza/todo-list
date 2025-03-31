@@ -44,12 +44,16 @@
     width: calc(100% - 20%);
    }
    #task-info > #list-size{
+    display: flex;
+    align-items: center;
     margin-left: 10px;
+    margin-bottom: 10px;
    }
    #task-info > #list-filter{
     gap: 30px;
     font-size: 10px;
-    
+    align-items: center;
+   margin-bottom: 10px;
    }
 
    #top-content {
