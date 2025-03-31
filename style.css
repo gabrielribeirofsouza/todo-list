@@ -12,6 +12,9 @@
 #clear-list{
     display: none;
 }
+#input-area{
+    align-items: center
+}
 }
 @media (max-width: 375px){
     #task-info{
@@ -21,28 +24,35 @@
     #clear-list{
         display: none;
     }
+    #input-area{
+        align-items: center
+    }
 }
 
 @media (max-width: 428px) {
     #container{
-     width: 100%;
+        width: 100%;
     }
     #container > #top-content > #header-area{
-     width: 100%;
-     gap: 30px;
+        width: 100%;
+        gap: 30px;
     }
     #container > #top-content > #header-area > h1{
-     font-size: 30px;
+        font-size: 30px;
     }
     #container > #top-content > #input-area{
-     width: calc(100% - 20%);
+        width: calc(100% - 20%);
+        align-items: center
     }
     #task-info > #list-size{
-     margin-left: 15px;
+        margin-left: 15px;
     }
-   
-   }
+    
+}
 @media (max-width: 768px) {
+    #input-area{
+        align-items: center
+    }
    #container{
     width: 100%;
    }

@@ -87,6 +87,15 @@ function addTask(containerTask, task){
     let elSpan = document.createElement('span')
     contentTask.innerText = task.texto
     task.element = elLista
+
+    if (btnDarkMode.classList.contains('hide')) {
+        contentTask.style.color = "black"; 
+        divIconList.style.color = "black"
+    } else {
+        divIconList.style.color = "white"
+        contentTask.style.color = "white"; // Dark mode
+    }
+
     containerTask.appendChild(elLista)
 
     elLista.appendChild(contentTask)
