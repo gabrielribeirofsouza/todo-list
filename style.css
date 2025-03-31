@@ -5,6 +5,23 @@
     text-decoration: none;
     list-style: none;
 }
+@media (max-width: 360px){
+#task-info{
+    width: 100vw;
+}
+#clear-list{
+    display: none;
+}
+}
+@media (max-width: 375px){
+    #task-info{
+        font-size: 15px;
+        width: 100vw;
+    }
+    #clear-list{
+        display: none;
+    }
+}
 
 @media (max-width: 428px) {
     #container{
@@ -12,7 +29,7 @@
     }
     #container > #top-content > #header-area{
      width: 100%;
-     gap: 300px;
+     gap: 30px;
     }
     #container > #top-content > #header-area > h1{
      font-size: 30px;
@@ -23,6 +40,7 @@
     #task-info > #list-size{
      margin-left: 15px;
     }
+   
    }
 @media (max-width: 768px) {
    #container{
@@ -194,6 +212,7 @@ body{
 #list-size{
     color: lightgray;
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
 }
 footer{
     text-align: center;
