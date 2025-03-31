@@ -30,23 +30,32 @@
    }
    #container > #top-content > #header-area{
     width: 100%;
-    gap: 300px;
+    gap: 20px;
+    flex-direction: column;
    }
    #container > #top-content > #header-area > h1{
-    font-size: 30px;
+    font-size: 24px;
+    text-align: center;
    }
    #container > #top-content > #input-area{
-    width: calc(100% - 20%);
+    width: calc(100% - 10%);
    }
    #task-info > #list-size{
     margin-left: 15px;
    }
+
+   #top-content {
+    background-image: url(imagens/bg-mobile-dark.jpg);
+    background-size: contain;
+    background-position: center;
+ }
   }
 
 
 
 body{
     background-color: #121826c9;
+    overflow-x: hidden;
 }
 #container{
    width: 100vw;
@@ -115,7 +124,8 @@ body{
 
 
 #bottom-content{
-    width: 520px;
+    width: 90%;
+    max-width: 520px;
     margin: 0 auto;
     background-color: hsl(235, 24%, 19%);
     position: relative;
