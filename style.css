@@ -31,17 +31,25 @@
    #container > #top-content > #header-area{
     width: 100%;
     gap: 20px;
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
    }
    #container > #top-content > #header-area > h1{
     font-size: 24px;
     text-align: center;
    }
    #container > #top-content > #input-area{
-    width: calc(100% - 10%);
+    width: calc(100% - 20%);
    }
    #task-info > #list-size{
-    margin-left: 15px;
+    margin-left: 10px;
+   }
+   #task-info > #list-filter{
+    gap: 20px;
+    font-size: 10px;
+    
    }
 
    #top-content {
